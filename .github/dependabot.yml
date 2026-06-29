@@ -1,0 +1,14 @@
+﻿version: 2                              # → schema version (must be 2)
+updates:
+  - package-ecosystem: "npm"            # → which package manager / language ecosystem
+    directory: "/"                      # → where the manifest (package.json) lives
+    schedule:
+      interval: "weekly"                # → how often to check: daily, weekly, or monthly
+    open-pull-requests-limit: 5         # → at most 5 update PRs open at once
+    reviewers:
+      - "<YOU>"                         # → auto-assigns this reviewer on every Dependabot PR
+
+  - package-ecosystem: "github-actions" # → keep your Actions versions current too
+    directory: "/"
+    schedule:
+      interval: "weekly"
