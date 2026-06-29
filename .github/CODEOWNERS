@@ -1,0 +1,3 @@
+﻿# Each line: PATTERN  OWNER(s)
+*.md            @Mickhar                   
+/src/payments   @team-payments           
